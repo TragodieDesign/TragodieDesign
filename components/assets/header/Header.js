@@ -1,9 +1,5 @@
 import Link from 'next/link'
 import Image from 'next/image'
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-
-} from "@fortawesome/free-solid-svg-icons";
 import { motion } from 'framer-motion'
 
 const Header = () => (
