@@ -8,3 +8,9 @@
   background-color:#000000;
   border: solid #0000 2px;
 }
+.home_banner{
+ background-image:url("/../public/banners/imagem/Banner-1536x864.png");
+ background-color:#353535;
+ width:100%;
+ height:100%;
+}

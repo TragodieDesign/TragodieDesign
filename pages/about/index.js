@@ -16,10 +16,11 @@ export default function About () {
     <Header/>
     <div className={styles.main}>
       <h1>Hello About</h1>
-<div class="home-banner">
+<div className="home_banner">
         <Image src ={`/../../public/banners/imagem/Banner-1536x864.png`}
           width={1536}
-          height={864}>
+          height={864}
+        alt={"TragodieDesign"}>
         </Image>
         </div>
 
