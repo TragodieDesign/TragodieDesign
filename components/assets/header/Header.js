@@ -1,20 +1,21 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import { motion } from 'framer-motion'
+import styles from "../../../styles/Header.module.css"
 
 const Header = () => (
     <div class="header">
-        <div class="social-media">
-           <div class="social-btn"><i class="fa-brands fa-facebook-square"></i></div>
-            <div class="social-btn"><i class="fa-brands fa-instagram-square"></i></div>
-            <div class="social-btn"><i class="fa-brands fa-behance-square"></i></div>
-            <div class="social-btn"><i class="fa-brands fa-linkedin"></i></div>
-            <div class="social-btn"><i class="fa-brands fa-github-square"></i></div>
+        <div className={socialmedianav}>
+           <div className={socialbtn}><i class="fa-brands fa-facebook-square"></i></div>
+           <div className={socialbtn}><i class="fa-brands fa-instagram-square"></i></div>
+           <div className={socialbtn}><i class="fa-brands fa-behance-square"></i></div>
+           <div className={socialbtn}><i class="fa-brands fa-linkedin"></i></div>
+           <div className={socialbtn}><i class="fa-brands fa-github-square"></i></div>
         </div>
 
 
         <motion.div
-            class="logo-wrapper"
+            className={logowrapper}
         animate={{ scale: 1 }}
       whileHover={{ scale: 1.2}}>
     <Image
@@ -22,24 +23,24 @@ const Header = () => (
             width={80} height={80}>
     </Image>
         </motion.div>
-        <div class="navbar">
+        <div className={navbar}>
 
-            <div class="header-btn">
+        <div className={headerbtn}>
                 <Link href="/">
                     <a href="/">Home </a>
                 </Link>
             </div>
-            <div class="header-btn">
+            <div className={headerbtn}>
                 <Link href="/projects">
                     <a href="/projects">Projetos </a>
                 </Link>
             </div>
-            <div class="header-btn">
+            <div className={headerbtn}>
                 <Link href="/about">
                     <a href="/about">Sobre </a>
                 </Link>
             </div>
-            <div class="header-btn">
+            <div className={headerbtn}>
                 <Link href="/">
                     <a href="/">Posts </a>
                 </Link>
