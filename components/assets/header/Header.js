@@ -4,49 +4,41 @@ import { motion } from 'framer-motion'
 import styles from "../../../styles/Header.module.css"
 
 const Header = () => (
-    <div class="header">
-        <div className={socialmedianav}>
-           <div className={socialbtn}><i class="fa-brands fa-facebook-square"></i></div>
-           <div className={socialbtn}><i class="fa-brands fa-instagram-square"></i></div>
-           <div className={socialbtn}><i class="fa-brands fa-behance-square"></i></div>
-           <div className={socialbtn}><i class="fa-brands fa-linkedin"></i></div>
-           <div className={socialbtn}><i class="fa-brands fa-github-square"></i></div>
-        </div>
-
-
-        <motion.div
-            className={logowrapper}
+    <div className={styles.container}>
+        <div className={styles.header}>
+            <motion.div
+            className={styles.logowrapper}
         animate={{ scale: 1 }}
       whileHover={{ scale: 1.2}}>
     <Image
     src="/../public/logo/logo150.png"
-            width={80} height={80}>
+            width={80} height={80} alt="TragodieDesign">
     </Image>
         </motion.div>
-        <div className={navbar}>
+        <div className={styles.navbar}>
 
-        <div className={headerbtn}>
+        <div className={styles.headerbtn}>
                 <Link href="/">
-                    <a href="/">Home </a>
+                    Home
                 </Link>
             </div>
-            <div className={headerbtn}>
+            <div className={styles.headerbtn}>
                 <Link href="/projects">
                     <a href="/projects">Projetos </a>
                 </Link>
             </div>
-            <div className={headerbtn}>
+            <div className={styles.headerbtn}>
                 <Link href="/about">
-                    <a href="/about">Sobre </a>
+                    Sobre
                 </Link>
             </div>
-            <div className={headerbtn}>
+            <div className={styles.headerbtn}>
                 <Link href="/">
-                    <a href="/">Posts </a>
+                    Posts
                 </Link>
             </div>
         </div>
-
+        </div>
     </div>
 );
 

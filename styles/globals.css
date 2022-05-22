@@ -21,7 +21,7 @@ a {
   box-sizing: border-box;
 }
 /*Global Styles*/
-.standard-btn{
+.standard_btn{
 background-color:var(--main-red);
 color:white;
 padding: 1em;
@@ -31,6 +31,14 @@ border-radius:1.5em;
 cursor:pointer;
 }
 
+.logowrapper {
+    height:30%;
+    width:33%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-radius:60px;
+    }
 
 
 
@@ -44,54 +52,24 @@ cursor:pointer;
   display:flex;
   align-items:center;
   justify-content:space-evenly;
- background-color: #353535;
- color:white;
- text-align:center;
- padding:2em;
- margin-top: 2em;
+  background-color: #353535;
+  color:white;
+  text-align:center;
+  padding:2em;
+  margin-top: 2em;
 }
-
-
+.footer_a{
+  color:white;
+}
+.footer_b{
+  display: flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  align-items: center;
+}
 /* FOOTER */
 
 
-/*=============HOME===============*/
-/*Main*/
-.home{
-  display:flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
- /*Main*/
-/*Main Banner*/
-.home-banner{
- background-image:url("/../public/banners/imagem/Banner-1536x864.png");
- background-color:#353535;
- width:100%;
- height:100%;
-}
-/*Main Banner*/
-/*Services*/
-.services-menu{
-display: flex;
-justify-content: space-evenly;
-align-items:center;
-margin: 3em;
-}
-.call-to-services{
-  background-color:#e3e3e3;
-  padding: 2em;
-  border-radius: 20px
-}
-
-/*Services*/
-.call-to-about{
-  display:flex;
-  align-items:center;
-  justify-content: flex-end;
-  flex-direction: column;
-}
 
 
 
