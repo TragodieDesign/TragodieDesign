@@ -10,7 +10,7 @@ const Footer = () => (
         animate={{ scale: 1 }}
       whileHover={{ scale: 1.2}}>
     <Image
-      src="/../public/logo/logo150.png"
+     src="/../public/logo/logo150.png"
       width={80}
       height={80}
       alt={"Tragödie Design"}>

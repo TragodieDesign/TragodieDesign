@@ -5,9 +5,11 @@
 }
     .header{
       position:fixed;
-      align-items:center;
+
       display:flex;
-      justify-content:space-between;
+      flex-wrap: wrap;
+      justify-content:space-evenly;
+      align-items:center;
       width:100%;
       padding:1em;
       z-index:99999;
@@ -15,21 +17,28 @@
     }
 
     .socialmedianav{
-        display:flex;
-        justify-content: space-evenly;
-        align-items:center;
-          width:33%;
+
+      display:flex;
+      flex-direction:row;
+      flex-wrap:wrap;
+      justify-content:space-evenly;
+      width:40%;
+    }
+        .socialbtn{
+          color:#353535;
+          width:1.5em;
+        margin: 1em 0 1em 0;
         }
 
     .logowrapper {
     height:30%;
-    width:33%;
+
     display:flex;
     align-items:center;
     justify-content:center;
     border-radius:60px;
-
     }
+
     .logowrapper img{
       border-radius:20px;
 
@@ -37,7 +46,8 @@
     .navbar{
       display: flex;
       justify-content: space-evenly;
-      width:33%;
+      width:40%;
+
     }
 
     /*NAVBAR*/
